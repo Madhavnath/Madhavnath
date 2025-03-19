@@ -1,0 +1,50 @@
+#include <iostream.h> 
+
+#include <conio.h> 
+
+class Base { 
+
+public: 
+
+virtual void print() { 
+
+cout << "Base Function" << endl; 
+
+} 
+
+}; 
+
+class Derived : public Base { 
+
+public: 
+
+void print() { 
+
+cout << "Derived Function" << endl; 
+
+} 
+
+}; 
+
+int main() { 
+
+clrscr(); 
+
+Derived derived1; 
+
+// pointer of Base type that points to derived1 
+
+Base* base1 = &derived1; 
+
+// calls member function of Derived class 
+
+base1->print(); 
+
+getch(); 
+
+return 0;
+
+<!---
+Madhavnath/Madhavnath is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
